@@ -1,0 +1,51 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+mat-card {
+  height: 200px;
+  margin-bottom: 2%;
+}
+input {
+  display: block;
+  margin: 5%;
+  width: 200%;
+  height: 12%;
+  border-radius: 5px;
+  }
+.image {
+  width: 50%;
+  height: 450px;
+  margin-top: 0%;
+  background-color: palegoldenrod;
+}
+.logo {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 100%;
+  margin-left:10%;
+  margin-bottom: 600px;
+ }
+.bigBox {
+  display: flex;
+  }
+.firstBox {
+  min-width: 50%;
+  margin-right: 15px;
+}
+.footer{
+  max-height: fit-content;
+}
+
+  .one{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: flex-end;
+  }
+  
+
+  .usuario{
+  width: 120px;
+  height: 120px;
+  }
+}
+

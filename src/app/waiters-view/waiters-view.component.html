@@ -1,0 +1,48 @@
+<p>
+  <mat-toolbar class="login">
+    <span>Taking the order...</span>
+  </mat-toolbar>
+</p>
+<div class="momBox">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+  <!-- Position Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef>Price</th>
+    <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef>Category</th>
+    <td mat-cell *matCellDef="let element">{{ element.category }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr
+    mat-row
+    (click)="addProducts(row)"
+    [class.demo-row-is-clicked]="clickedRows.has(row)"
+    *matRowDef="let row; columns: displayedColumns"
+  ></tr>
+</table>
+
+<div>
+  <h3>Your Order</h3>
+</div>
+
+<div *ngIf="!clickedRows.size">Clicked products will be logged here</div>
+
+<ul>
+  <li *ngFor="let prod of order">
+    {{ prod.name }}
+  </li>
+</ul>
+<button (click)="createOrder()">send</button>
+</div>
+<mat-toolbar class="footer" color="primary">Burguer Queen Work APP</mat-toolbar>

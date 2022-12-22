@@ -1,0 +1,66 @@
+{
+	"menu": {
+		"item": [{
+				"name": "American",
+				"price": 5,
+				"category": "Breakfast"
+			},
+			{
+				"name": "Capuccino",
+				"price": 7,
+				"category": "Breakfast"
+			},
+			{
+				"name": "Cheese Sandwish",
+				"price": 10,
+				"category": "Breakfast"
+			},
+			{
+				"name": "Juice",
+				"price": 7,
+				"category": "Breakfast"
+			},
+			{
+				"name": "Simple burguer",
+				"price": 10,
+				"category": "Meals"
+			},
+			{
+				"name": "Double burger",
+				"price": 15,
+				"category": "Meals"
+			},
+			{
+				"name": "Fries",
+				"price": 5,
+				"category": "Meals"
+			},
+			{
+				"name": "Onion rings",
+				"price": 5,
+				"category": "Meals"
+			},
+			{
+				"name": "Cheese Sandwish",
+				"price": 10,
+				"category": "Meals"
+			},
+			{
+				"name": "Water 500ml",
+				"price": 5,
+				"category": "Meals"
+			},
+			{
+				"name": "Water 750ml",
+				"price": 7,
+				"category": "Meals"
+			},
+			{
+				"name": "Gas water 500ml",
+				"price": 7,
+				"category": "Meals"
+			}
+
+		]
+	}
+}
